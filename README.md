@@ -19,6 +19,8 @@ List of URLs of provider
   * http://localhost:3000/movie/1
 
 ### Provider testing with Postman and [newman](https://www.npmjs.com/package/newman)
+* Design test cases ?
+* What to test ?
 ```
 $npm install -g newman
 $newman run <collection-file>
@@ -33,9 +35,9 @@ $newman run <collection-file> -r htmlextra,cli
 ```
 
 ### Provider testing with [Jest](https://jestjs.io/) and [Supertest](https://www.npmjs.com/package/supertest)
-
+* Design test cases ?
+* What to test ?
 * Test files in folder `provider/component-tests/`
-
 ```
 $npm run provider:test
 ```
