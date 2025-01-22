@@ -69,8 +69,7 @@ $pact-broker version
 
 Publish contract file to Pact broker
 ```
-$export PACT_BROKER_BASE_URL=http://165.22.252.243:9292
-$export PACT_BROKER_TOKEN=<api-key>
+$export PACT_BROKER_BASE_URL=<url of broker>
 
 $npm run publish:pact
 ```
@@ -79,7 +78,6 @@ $npm run publish:pact
 
 ```
 $export PACT_BROKER_BASE_URL=<url of broker>
-$export PACT_BROKER_TOKEN=<api-key>
 
 $npm run provider:verify
 ```
