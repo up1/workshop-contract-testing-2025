@@ -1,0 +1,19 @@
+{
+  "name": "workshop-contract-test-2025",
+  "version": "1.0.0",
+  "description": "## 1. Provider",
+  "main": "index.js",
+  "scripts": {
+    "start:provider": "node provider/provider-service.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "joi": "^17.13.3",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
