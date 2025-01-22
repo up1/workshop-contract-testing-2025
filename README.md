@@ -7,7 +7,7 @@
 
 ```
 $npm install
-$npm run start:provider
+$npm run provider:start
 ```
 
 List of URLs of provider
@@ -17,5 +17,27 @@ List of URLs of provider
   * http://localhost:3000/movies/
 * Get movie by id
   * http://localhost:3000/movie/1
+
+### Provider testing with Postman and [newman](https://www.npmjs.com/package/newman)
+```
+$npm install -g newman
+$newman run <collection-file>
+```
+
+Working with HTML report
+* https://www.npmjs.com/package/newman-reporter-htmlextra
+
+```
+$npm install -g newman-reporter-htmlextra
+$newman run <collection-file> -r htmlextra,cli
+```
+
+### Provider testing with [Jest](https://jestjs.io/) and [Supertest](https://www.npmjs.com/package/supertest)
+
+* Test files in folder `provider/component-tests/`
+
+```
+$npm run provider:test
+```
 
 ## 2. Consumer web
