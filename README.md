@@ -42,4 +42,54 @@ $newman run <collection-file> -r htmlextra,cli
 $npm run provider:test
 ```
 
-## 2. Consumer web
+## 2. Consumer-side
+* Call data from provider via HTTP
+
+
+## 3. Working Contract testing
+* Provider vs Consumer
+
+### 3.1 Run contract testing in consumer-side
+* File `consumer/contract-tests/consumer-contract.spec.js`
+```
+$npm run consumer:contract-test
+```
+Result :: Contract file in folder `/pacts`
+
+
+### 3.2 Publish contract to Pact broker
+
+* Download and configuration [Pact standalone executables](https://github.com/pact-foundation/pact-ruby-standalone/releases)
+
+Run
+```
+$pact-broker version  
+1.77.0
+```
+
+Publish contract file to Pact broker
+```
+$export PACT_BROKER_BASE_URL=http://165.22.252.243:9292
+$export PACT_BROKER_TOKEN=<api-key>
+
+$npm run publish:pact
+```
+
+### 3.3 Verify contracts from provider
+
+```
+$export PACT_BROKER_BASE_URL=<url of broker>
+$export PACT_BROKER_TOKEN=<api-key>
+
+$npm run provider:verify
+```
+
+Start provider server
+```
+$npm run provider:start
+```
+
+Run verify again
+```
+$npm run provider:verify
+```

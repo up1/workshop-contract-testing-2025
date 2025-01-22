@@ -100,7 +100,7 @@ server.get('/movie/:id', (req, res) => {
 server.post('/movies', (req, res) => {
   const schema = Joi.object({
     name: Joi.string().required(),
-    year: Joi.number().integer().min(1900).max(2023).required(),
+    year: Joi.number().integer().min(1900).max(2025).required(),
   });
 
   const result = schema.validate(req.body);
