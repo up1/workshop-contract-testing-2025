@@ -68,6 +68,8 @@ $pact-broker version
 ```
 
 Publish contract file to Pact broker
+* [On-prem](https://docs.pact.io/pact_broker)
+* [On-cloud at Pactflow](https://pactflow.io/)
 ```
 $export PACT_BROKER_BASE_URL=<url of broker>
 
