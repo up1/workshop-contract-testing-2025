@@ -108,9 +108,15 @@ List of URLs
 * Cypress adapter
 * Playwright adapter
 
+
+### Cypress adapter for Pact
+* Folder `cypress/`
 ```
 $npm i -D cypress
 $npm i -D @pactflow/pact-cypress-adapter
 
-$npx cypress open
+$npm run consumer-ui:test
 ```
+
+Result :: Pact contract file in folder `cypress/pacts`
+* MoviesAPI-UIConsumer.json
