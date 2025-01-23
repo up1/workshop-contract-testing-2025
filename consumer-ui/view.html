@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+  <meta name="viewport" 
+        content='width=device-width,  
+                 initial-scale=1.0'> 
+  <title>Web UI Consumer</title> 
+</head> 
+  
+<body style="text-align:center"> 
+  <h1 style="color:blue">Movie</h1> 
+  <h3>Get movie detail id = 1</h3> 
+  <script> 
+    fetch('http://localhost:3000/movie/1')
+      .then((res) => { 
+        return res.json() 
+      }).then((data) => { 
+        document.body.innerHTML += 
+        (data.name) 
+      }) 
+      .catch((err) => console.debug(err)); 
+  </script> 
+</body> 
+  
+</html>

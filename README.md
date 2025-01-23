@@ -93,3 +93,24 @@ Run verify again
 ```
 $npm run provider:verify
 ```
+
+## 4. Consumer with Web UI
+* Folder `consumer-ui/`
+
+```
+$npm run comsumer-ui:start
+```
+
+List of URLs
+* http://localhost:8000/
+
+## 5. Contract testing with PactJS + [Consumer Adapter](https://docs.pactflow.io/docs/bi-directional-contract-testing/tools#consumer-adapters)
+* Cypress adapter
+* Playwright adapter
+
+```
+$npm i -D cypress
+$npm i -D @pactflow/pact-cypress-adapter
+
+$npx cypress open
+```
