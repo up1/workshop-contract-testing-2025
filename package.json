@@ -6,6 +6,7 @@
   "scripts": {
     "comsumer-ui:start": "node consumer-ui/index.js",
     "consumer-ui:contract-test": "cypress run",
+    "consumer-ui:open": "cypress open",
     "consumer-ui:publish:pact": "pact-broker publish ./cypress/pacts --consumer-app-version=1.0.0 --branch=main --broker-base-url=http://157.245.150.114:9292 --broker-username pact_workshop --broker-password pact_workshop -v",
     "provider:start": "node provider/provider-service.js",
     "provider:test": "jest provider/component-tests/ --coverage",
