@@ -12,7 +12,6 @@
     "provider:verify": "pact-provider-verifier --provider MoviesAPI --provider-base-url http://localhost:3000 --pact-broker-base-url=http://157.245.150.114:9292 --broker-username pact_workshop --broker-password pact_workshop --wait 10 --publish-verification-results true --provider-app-version 1.0.0 --branch=main --wait 10",
     "consumer:contract-test": "jest consumer/contract-tests/",
     "publish:pact": "pact-broker publish ./pacts --consumer-app-version=1.0.0 --branch=main --broker-base-url=http://157.245.150.114:9292 --broker-username pact_workshop --broker-password pact_workshop -v"
-
   },
   "keywords": [],
   "author": "",
