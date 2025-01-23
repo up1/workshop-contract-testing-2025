@@ -42,7 +42,7 @@ $newman run <collection-file> -r htmlextra,cli
 $npm run provider:test
 ```
 
-## 2. Consumer-side
+## 2. Consumer A from API
 * Call data from provider via HTTP
 
 
@@ -94,7 +94,7 @@ Run verify again
 $npm run provider:verify
 ```
 
-## 4. Consumer with Web UI
+## 4. Consumer B from Web UI
 * Folder `consumer-ui/`
 
 ```
