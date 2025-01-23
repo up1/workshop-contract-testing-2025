@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "comsumer-ui:start": "node consumer-ui/index.js",
-    "consumer-ui:test": "cypress run",
+    "consumer-ui:contract-test": "cypress run",
     "provider:start": "node provider/provider-service.js",
     "provider:test": "jest provider/component-tests/ --coverage",
     "provider:verify": "pact-provider-verifier --provider MoviesAPI --provider-base-url http://localhost:3000 --pact-broker-base-url=$PACT_BROKER_BASE_URL --broker-username pact_workshop --broker-password pact_workshop --wait 10 --publish-verification-results true --provider-app-version 1.0.0 --branch=main --wait 10",

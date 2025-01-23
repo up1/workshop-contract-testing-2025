@@ -115,7 +115,7 @@ List of URLs
 $npm i -D cypress
 $npm i -D @pactflow/pact-cypress-adapter
 
-$npm run consumer-ui:test
+$consumer-ui:contract-test
 ```
 
 Result :: Pact contract file in folder `cypress/pacts`
