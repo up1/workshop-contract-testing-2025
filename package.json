@@ -10,6 +10,7 @@
     "consumer-ui:publish:pact": "pact-broker publish ./cypress/pacts --consumer-app-version=1.0.0 --branch=main --broker-base-url=http://104.248.159.48:9292 --broker-username pact_workshop --broker-password pact_workshop -v",
     "provider:start": "node provider/provider-service.js",
     "provider:test": "jest provider/component-tests/ --coverage",
+    "consumer:test": "jest consumer/component-tests/ --coverage",
     "provider:verify": "pact-provider-verifier --provider MoviesAPI --provider-base-url http://localhost:3000 --pact-broker-base-url=http://104.248.159.48:9292 --broker-username pact_workshop --broker-password pact_workshop --wait 10 --publish-verification-results true --provider-app-version 1.0.0 --branch=main --wait 10",
     "consumer:contract-test": "jest consumer/contract-tests/",
     "publish:pact": "pact-broker publish ./pacts --consumer-app-version=1.0.0 --branch=main --broker-base-url=http://104.248.159.48:9292 --broker-username pact_workshop --broker-password pact_workshop -v"
@@ -32,6 +33,7 @@
     "graphql": "^16.10.0",
     "jest": "^29.7.0",
     "jsonschema": "^1.5.0",
+    "nock": "^14.0.1",
     "os-browserify": "^0.3.0",
     "path-browserify": "^1.0.1",
     "supertest": "^7.0.0"
